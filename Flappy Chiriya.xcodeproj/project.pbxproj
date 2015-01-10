@@ -19,6 +19,7 @@
 		419DF8D21A60BF0E0064B638 /* Bird Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 419DF8CD1A60BF0E0064B638 /* Bird Up.png */; };
 		419DF8D31A60BF0E0064B638 /* GameBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 419DF8CE1A60BF0E0064B638 /* GameBackground.png */; };
 		419DF8D41A60BF0E0064B638 /* Tunnel.png in Resources */ = {isa = PBXBuildFile; fileRef = 419DF8CF1A60BF0E0064B638 /* Tunnel.png */; };
+		419DF8DC1A60CB2B0064B638 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DF8DB1A60CB2B0064B638 /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		419DF8CD1A60BF0E0064B638 /* Bird Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bird Up.png"; sourceTree = "<group>"; };
 		419DF8CE1A60BF0E0064B638 /* GameBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameBackground.png; sourceTree = "<group>"; };
 		419DF8CF1A60BF0E0064B638 /* Tunnel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tunnel.png; sourceTree = "<group>"; };
+		419DF8DA1A60CB2B0064B638 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		419DF8DB1A60CB2B0064B638 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				419DF8AA1A60BDF30064B638 /* AppDelegate.m */,
 				419DF8AC1A60BDF30064B638 /* ViewController.h */,
 				419DF8AD1A60BDF30064B638 /* ViewController.m */,
+				419DF8DA1A60CB2B0064B638 /* Game.h */,
+				419DF8DB1A60CB2B0064B638 /* Game.m */,
 				419DF8AF1A60BDF30064B638 /* Main.storyboard */,
 				419DF8B21A60BDF30064B638 /* Images.xcassets */,
 				419DF8B41A60BDF30064B638 /* LaunchScreen.xib */,
@@ -242,6 +247,7 @@
 				419DF8AE1A60BDF30064B638 /* ViewController.m in Sources */,
 				419DF8AB1A60BDF30064B638 /* AppDelegate.m in Sources */,
 				419DF8A81A60BDF30064B638 /* main.m in Sources */,
+				419DF8DC1A60CB2B0064B638 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +375,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -381,7 +387,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
