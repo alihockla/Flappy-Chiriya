@@ -46,6 +46,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65682704230638567" green="0.99501312715992507" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="HighScore" destination="leC-ox-PYb" id="mii-iX-IfR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,12 +67,13 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bird Up.png" id="MPJ-vY-G68">
-                                <rect key="frame" x="16" y="264" width="40" height="40"/>
+                                <rect key="frame" x="61" y="246" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Am-zc-aZw">
-                                <rect key="frame" x="31" y="144" width="258" height="94"/>
+                                <rect key="frame" x="31" y="105" width="258" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Start Game!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -77,12 +81,52 @@
                                     <action selector="StartGame:" destination="tJ0-uG-rR1" eventType="touchUpInside" id="pUg-8X-CNL"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel.png" id="r73-VQ-95M">
+                                <rect key="frame" x="214" y="-364" width="53" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel.png" id="awh-aa-i4r">
+                                <rect key="frame" x="214" y="256" width="53" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel.png" id="IgG-y6-Qo1">
+                                <rect key="frame" x="0.0" y="546" width="320" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tunnel.png" id="R0l-vL-qTd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LtL-y7-FAE">
+                                <rect key="frame" x="16" y="30" width="126" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ghX-NK-3Ed">
+                                <rect key="frame" x="40" y="314" width="240" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="JBe-hx-E1q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="Bird" destination="MPJ-vY-G68" id="mQF-Mp-8Sm"/>
+                        <outlet property="Bottom" destination="IgG-y6-Qo1" id="srb-Ve-Yoh"/>
+                        <outlet property="Exit" destination="ghX-NK-3Ed" id="Be2-9X-cBI"/>
+                        <outlet property="ScoreLabel" destination="LtL-y7-FAE" id="ioT-CO-9W6"/>
                         <outlet property="StartGame" destination="9Am-zc-aZw" id="CJL-nR-zPU"/>
+                        <outlet property="Top" destination="R0l-vL-qTd" id="YvN-XF-0o1"/>
+                        <outlet property="TunnelBottom" destination="awh-aa-i4r" id="b7k-Rg-4W6"/>
+                        <outlet property="TunnelTop" destination="r73-VQ-95M" id="cNy-gL-9Ub"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bJ-Bq-OmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,6 +137,7 @@
     <resources>
         <image name="Bird Up.png" width="40" height="40"/>
         <image name="GameBackground.png" width="320" height="480"/>
+        <image name="Tunnel.png" width="50" height="100"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
